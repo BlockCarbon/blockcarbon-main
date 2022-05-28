@@ -1,0 +1,293 @@
+
+### May 26, 2022 ###
+
+[nix-shell:~/src/blockcarbon-private]$ cabal exec -- blockcarbon-pab
+[INFO] Slot 0: TxnValidate 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807
+[INFO] Starting PAB webserver on port 8080
+[INFO] Starting PAB backend server on port 9080
+[INFO] ********* PAB server is running *********
+[INFO] To start PAB simulation press return
+
+[INFO] Initializing contract handle for wallet 1
+[INFO] Initialising contract UseContract with ID a127ec30-884e-4324-8f5e-6611e288b5a5
+[INFO] Activated instance a127ec30-884e-4324-8f5e-6611e288b5a5 on W[1]
+[INFO] Initializing contract handle for wallet 2
+[INFO] Initialising contract UseContract with ID 1c65ff80-51f1-4a50-9f66-742e2cf823d8
+[INFO] Activated instance 1c65ff80-51f1-4a50-9f66-742e2cf823d8 on W[2]
+[INFO] Calling mint endpoint for wallet 1
+[INFO] W[1]: Balancing an unbalanced transaction:
+               Tx:
+                 Tx 0db52fbb64c5a21b3c20967f5446b8ee342c13b6f98daef496dd62b0d3c0d246:
+                   {inputs:
+                      - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!50
+
+                   collateral inputs:
+                   outputs:
+                   mint: Value (Map [(277362d8cbd8c7f5414ca545a5ca114fbba335a7b1714aae50257cef,Map [(0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2,1)])])
+                   fee: Value (Map [])
+                   mps:
+                     MintingPolicy { <script> }
+                   signatures:
+                   validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                   data:}
+               Requires signatures:
+               Utxo index:
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!50
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!51
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!52
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!53
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!54
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!55
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!56
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!57
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!58
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!59
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential) )
+               Validity range:
+                 (-∞ , +∞)
+[INFO] W[1]: Finished balancing:
+               Tx 56b5736d70948edd406b42eb9202669c805f7a40fbe6b9c06c4263766283d1e3:
+                 {inputs:
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!50
+
+                 collateral inputs:
+                   - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!50
+
+                 outputs:
+                   - Value (Map [(,Map [("",9996698718)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential)
+                   - Value (Map [(,Map [("",2000000)]),(277362d8cbd8c7f5414ca545a5ca114fbba335a7b1714aae50257cef,Map [(0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2,1)])]) addressed to
+                     PubKeyCredential: a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2 (no staking credential)
+                 mint: Value (Map [(277362d8cbd8c7f5414ca545a5ca114fbba335a7b1714aae50257cef,Map [(0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2,1)])])
+                 fee: Value (Map [(,Map [("",1301282)])])
+                 mps:
+                   MintingPolicy { <script> }
+                 signatures:
+                 validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                 data:}
+[INFO] W[1]: Signing tx: 56b5736d70948edd406b42eb9202669c805f7a40fbe6b9c06c4263766283d1e3
+[INFO] W[1]: Submitting tx: 56b5736d70948edd406b42eb9202669c805f7a40fbe6b9c06c4263766283d1e3
+[INFO] Slot 2: TxnValidate 56b5736d70948edd406b42eb9202669c805f7a40fbe6b9c06c4263766283d1e3
+[INFO] a127ec30-884e-4324-8f5e-6611e288b5a5: "forged Value (Map [(277362d8cbd8c7f5414ca545a5ca114fbba335a7b1714aae50257cef,Map [(0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2,1)])])"
+[INFO] a127ec30-884e-4324-8f5e-6611e288b5a5: "NFT params MintPolicyParams {mpOref = TxOutRef {txOutRefId = 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807, txOutRefIdx = 50}, mpTokenName = 0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2, mpAddress = \"123 Street\", mpLat = 12345678, mpLong = 12345678, mpCategory = \"Efficiency\", mpMethod = \"Solar\", mpCO2Qty = 50, mpAdminPkh = a2c20c77887ace1cd986193e4e75babd8993cfd56995cd5cfce609c2}"
+[INFO] Token minted for wallet 1, press return to continue
+
+[INFO] Calling mint endpoint for wallet 2
+[INFO] W[2]: Balancing an unbalanced transaction:
+               Tx:
+                 Tx e066c13511e50d7d9eaa1a40c7ab71c3025cc459db68c60839604949884ec711:
+                   {inputs:
+                      - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!20
+
+                   collateral inputs:
+                   outputs:
+                   mint: Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,1)])])
+                   fee: Value (Map [])
+                   mps:
+                     MintingPolicy { <script> }
+                   signatures:
+                   validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                   data:}
+               Requires signatures:
+               Utxo index:
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!20
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!21
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!22
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!23
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!24
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!25
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!26
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!27
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!28
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!29
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+               Validity range:
+                 (-∞ , +∞)
+[INFO] W[2]: Finished balancing:
+               Tx fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0:
+                 {inputs:
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!20
+
+                 collateral inputs:
+                   - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!20
+
+                 outputs:
+                   - Value (Map [(,Map [("",9996698717)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential)
+                   - Value (Map [(,Map [("",2000000)]),(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,1)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential)
+                 mint: Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,1)])])
+                 fee: Value (Map [(,Map [("",1301283)])])
+                 mps:
+                   MintingPolicy { <script> }
+                 signatures:
+                 validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                 data:}
+[INFO] W[2]: Signing tx: fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0
+[INFO] W[2]: Submitting tx: fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0
+[INFO] Slot 9: TxnValidate fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0
+[INFO] 1c65ff80-51f1-4a50-9f66-742e2cf823d8: "forged Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,1)])])"
+[INFO] 1c65ff80-51f1-4a50-9f66-742e2cf823d8: "NFT params MintPolicyParams {mpOref = TxOutRef {txOutRefId = 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807, txOutRefIdx = 20}, mpTokenName = 0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17, mpAddress = \"456 Avenue\", mpLat = 87654321, mpLong = 87654321, mpCategory = \"Capture\", mpMethod = \"Technology\", mpCO2Qty = 6000, mpAdminPkh = 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7}"
+[INFO] Token minted for wallet 2, press return to continue
+
+[INFO] Calling burn endpoint for wallet 2
+[INFO] W[2]: Balancing an unbalanced transaction:
+               Tx:
+                 Tx 671225f06dbfb4bf38ee8bdcd7c1c256c8d4670564ed88ca9328a2d89fa5f34a:
+                   {inputs:
+                      - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!21
+
+                   collateral inputs:
+                   outputs:
+                   mint: Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,-1)])])
+                   fee: Value (Map [])
+                   mps:
+                     MintingPolicy { <script> }
+                   signatures:
+                   validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                   data:}
+               Requires signatures:
+               Utxo index:
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!21
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!22
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!23
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!24
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!25
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!26
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!27
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!28
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!29
+                 , - Value (Map [(,Map [("",10000000000)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0!0
+                 , - Value (Map [(,Map [("",9996698717)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+                 ( fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0!1
+                 , - Value (Map [(,Map [("",2000000)]),(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,1)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential) )
+               Validity range:
+                 (-∞ , +∞)
+[INFO] W[2]: Finished balancing:
+               Tx f5de34275a913f862e869c951a538bdffe1de3d4b1fa0469d215d029a2bd58c2:
+                 {inputs:
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!21
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!22
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!23
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!24
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!25
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!26
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!27
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!28
+
+                    - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!29
+
+                    - fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0!0
+
+                    - fa767843a5ad993e6e069382d00f5cd190bff8893a608a60787c82d8349ecca0!1
+
+                 collateral inputs:
+                   - 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807!21
+
+                 outputs:
+                   - Value (Map [(,Map [("",89998698717)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential)
+                   - Value (Map [(,Map [("",9999869373)])]) addressed to
+                     PubKeyCredential: 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7 (no staking credential)
+                 mint: Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,-1)])])
+                 fee: Value (Map [(,Map [("",130627)])])
+                 mps:
+                   MintingPolicy { <script> }
+                 signatures:
+                 validity range: Interval {ivFrom = LowerBound NegInf True, ivTo = UpperBound PosInf True}
+                 data:}
+[INFO] W[2]: Signing tx: f5de34275a913f862e869c951a538bdffe1de3d4b1fa0469d215d029a2bd58c2
+[INFO] W[2]: Submitting tx: f5de34275a913f862e869c951a538bdffe1de3d4b1fa0469d215d029a2bd58c2
+[INFO] Slot 12: TxnValidate f5de34275a913f862e869c951a538bdffe1de3d4b1fa0469d215d029a2bd58c2
+[INFO] 1c65ff80-51f1-4a50-9f66-742e2cf823d8: "burned Value (Map [(ad93f4400bfd3db2abea64aa83ddda43be121215c7fafe67a69c151d,Map [(0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17,-1)])])"
+[INFO] 1c65ff80-51f1-4a50-9f66-742e2cf823d8: "Burning params MintPolicyParams {mpOref = TxOutRef {txOutRefId = 08111487e032e647e23e6e6866665ab726a4c92532e9589f9e670f2585e35807, txOutRefIdx = 20}, mpTokenName = 0xac525e1dc883da9455b6a270a5802aafcabc5a4a8eddc351328ed120818d9e17, mpAddress = \"456 Avenue\", mpLat = 87654321, mpLong = 87654321, mpCategory = \"Capture\", mpMethod = \"Technology\", mpCO2Qty = 6000, mpAdminPkh = 80a4f45b56b88d1139da23bc4c3c75ec6d32943c087f250b86193ca7}"
+[INFO] Token burned for wallet 2, press return to continue
+
+[INFO] Balances at the end of the simulation
+webserver: shutting down
+[INFO] Wallet 7: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 8: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 6: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 4: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 2: 
+[INFO]     {, ""}: 99998568090
+[INFO] Wallet 1: 
+[INFO]     {, ""}: 99998698718
+[INFO]     {277362d8cbd8c7f5414ca545a5ca114fbba335a7b1714aae50257cef, 0x97fffd6d8c3bae2511390b4a00025f9d0dad2ab0b1276c44d53979e42f8ae7d2}: 1
+[INFO] Wallet 10: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 9: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 3: 
+[INFO]     {, ""}: 100000000000
+[INFO] Wallet 5: 
+[INFO]     {, ""}: 100000000000

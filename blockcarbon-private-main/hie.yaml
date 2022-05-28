@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "./src"
+      component: "blockcarbon:lib:blockcarbon"
+    - path: "./examples/src"
+      component: "blockcarbon:lib:blockcarbon"
+    - path: "./examples/test"
+      component: "blockcarbon:test:plutus-example-projects-test"
+    - path: "./pab"
+      component: "blockcarbon:exe:blockcarbon-pab"

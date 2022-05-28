@@ -1,0 +1,84 @@
+cabal-version:      3.0
+name:               blockcarbon
+version:            0.0.2.0
+
+-- A short (one-line) description of the package.
+-- synopsis: A Prototype using Cardano Blockchain for carbon credit NFTs
+
+-- A longer description of the package.
+-- description: A Prototype using Cardano Blockchain for carbon credit NFTs
+
+-- A URL where users can report bugs.
+-- bug-reports: 
+
+license: Apache-2.0
+license-files: LICENSE
+author:             Lawrence Ley
+maintainer:         lawrence.ley@contextsolutions.ca
+
+-- A copyright notice.
+-- copyright:
+-- category:
+-- extra-source-files: CHANGELOG.md
+
+flag defer-plugin-errors
+    description:
+        Defer errors from the plugin, useful for things like Haddock that can't handle it.
+    default: False
+    manual: True
+
+common lang
+    default-language:   Haskell2010
+    ghc-options:
+      -Wall -Wnoncanonical-monad-instances
+      -Wincomplete-uni-patterns -Wincomplete-record-updates
+      -Wredundant-constraints -Widentities -rtsopts
+      -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
+    if flag(defer-plugin-errors)
+        ghc-options: -fplugin-opt PlutusTx.Plugin:defer-errors
+
+library
+    import: lang
+    exposed-modules:
+      OnChain
+      OffChain
+      Utils
+      Types
+    build-depends:
+      base >= 4.9 && < 5,
+      aeson -any,
+      bytestring -any,
+      containers -any,
+      freer-extras -any,
+      playground-common -any,
+      plutus-contract -any,
+      plutus-ledger -any,
+      plutus-ledger-api -any,
+      plutus-ledger-constraints -any,
+      plutus-tx -any,
+      plutus-tx-plugin -any,
+      text -any,
+      lens -any,
+    hs-source-dirs: src
+
+ 
+executable blockcarbon-pab
+  import: lang
+  main-is: Main-sim.hs
+  hs-source-dirs: pab
+  other-modules: PabContract
+  ghc-options:
+    -threaded
+  build-depends:
+    base >= 4.9 && < 5,
+    data-default -any,
+    plutus-contract -any,
+    plutus-pab -any,
+    blockcarbon -any,
+    aeson -any,
+    freer-simple -any,
+    prettyprinter -any,
+    playground-common -any,
+    freer-extras -any,
+    plutus-ledger -any,
+    openapi3 -any,
