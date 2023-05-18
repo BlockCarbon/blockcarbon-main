@@ -3,7 +3,7 @@
 ## Setting up
 
 Clone the repository to your local environment
-```git clone https://github.com/lley154/blockcarbon-private.git ```
+```git clone https://github.com/BlockCarbon/blockcarbon-private-main.git ```
 
 
 ### Cabal+Nix build
